@@ -2280,6 +2280,9 @@ img {
   .entry-subtitle {
       font-size: 1rem;
   }
+  .img_align1{
+    margin-top: 31px;
+  }
 }
 
 @media (max-width: 480px) {

@@ -2078,6 +2078,8 @@ border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 
+/* scraping_page boxes */
+
 .ag-format-container {
   max-width: 960px;
   margin: 0 auto;
@@ -2184,12 +2186,6 @@ border: 2px solid rgba(255, 255, 255, 0.3);
   color: #ccc;
 }
 
-.ag-courses-item_date {
-  display: block;
-  margin-top: 8px;
-  font-weight: bold;
-  color: #fff;
-}
 
 /* Hover Effects */
 .ag-courses-item_link:hover {
@@ -2241,15 +2237,24 @@ border: 2px solid rgba(255, 255, 255, 0.3);
   }
 }
 
-/* Desktop: center last card if alone on last row in 3-column layout */
-/* .ag-courses_item:last-child:nth-child(3n+1) {
-  margin-left: 160px;
-  margin-right: 160px;
-} */
 
 @media (orientation: landscape) {
   .ag-courses_item:last-child:nth-child(3n+1) {
     margin-left: 160px;
     margin-right: 160px;
+  }
+}
+
+@media (orientation: portrait) {
+  .ag-courses-item_content{
+    opacity: 1;
+    max-height: 300px;
+    color: white;
+    font-size: 16px;
+  }
+
+  .ag-courses-item_title{
+    color: white;
+    font-size: 19px;
   }
 }
