@@ -1344,7 +1344,7 @@ img {
   }
 
   .img_align1{
-    margin-top: 51px;
+    margin-top: 21px;
   }
   
 .img_align2{
@@ -1857,6 +1857,10 @@ img {
     .info-content p{
       font-size: 13px;
     }
+    .reveal-right{
+      margin-top: -65px;
+    }
+    
   }
   
   @media (max-width: 576px) {
