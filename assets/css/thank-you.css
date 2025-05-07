@@ -1,0 +1,77 @@
+/* Reset and base styles */* {
+  margin: 0;    padding: 0;
+  box-sizing: border-box;}
+#thanks-body {
+  display: flex;    justify-content: center;
+  align-items: center;    min-height: 100vh;
+  margin: 0;    background: linear-gradient(45deg, #4ECDC4, #556270);
+  font-family: 'Montserrat', sans-serif;    overflow: hidden;
+  animation: backgroundAnimation 5s ease infinite;    padding: 1rem;
+}
+/* Container styles */.thanks-container {
+  position: relative;    text-align: center;
+  padding: 1rem;    background: rgba(255, 255, 255, 0.85);
+  border-radius: 1rem;    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+  color: #333;    width: 100%;
+  max-width: 600px;    margin: 0 auto;
+  backdrop-filter: blur(10px);}
+/* Checkmark icon */
+.checkmark {    font-size: clamp(3rem, 5vw, 4.5rem);
+  color: #4ECDC4;    margin-bottom: 1rem;
+}
+/* Title styles */.title {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);    font-weight: 600;
+  margin-bottom: 1.25rem;    color: #333;
+  text-transform: uppercase;    letter-spacing: 2px;
+}
+/* Content styling */.content {
+  font-size: clamp(1rem, 3vw, 1.125rem);    color: #444;
+  line-height: 1.6;
+  margin-bottom: 2rem;}
+/* Button styles */
+.home-button {    display: inline-block;
+  padding: 0.75rem 2rem;
+  font-size: clamp(0.875rem, 2.5vw, 1.125rem);    color: white;
+  background: #4ECDC4;    border: none;
+  border-radius: 2rem;    cursor: pointer;
+  text-transform: uppercase;    letter-spacing: 1px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);    transition: all 0.3s ease;
+  font-weight: 600;    text-decoration: none;
+}
+.home-button:hover {    background: #556270;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);    transform: scale(1.05);
+  background-color: #FFC451;
+  color: black;
+}
+/* Animated circles */.circle {
+  position: absolute;    border: 4px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;    left: 50%;
+  top: 50%;    transform: translate(-50%, -50%);
+}
+.circle1 {    width: 280px;
+  height: 280px;    animation: rotateCircle 14s linear infinite;
+}
+.circle2 {    width: 350px;
+  height: 350px;    animation: rotateCircle 12s linear infinite;
+}
+.circle3 {    width: 420px;
+  height: 420px;
+  animation: rotateCircle 10s linear infinite;}
+/* Animations */
+@keyframes backgroundAnimation {    0% { background: linear-gradient(45deg, #4ECDC4, #556270); }
+  50% { background: linear-gradient(45deg, #556270, #4ECDC4); }    100% { background: linear-gradient(45deg, #4ECDC4, #556270); }
+}
+@keyframes rotateCircle {    0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }}
+/* Media Queries */
+@media screen and (max-width: 768px) {    .thanks-container {
+      padding: 1.5rem;        margin: 1rem;
+  }
+  .circle1 { width: 200px; height: 200px; }
+  .circle2 { width: 250px; height: 250px; }    .circle3 { width: 300px; height: 300px; }
+}
+@media screen and (max-width: 480px) {    .thanks-container {
+      padding: 1rem;    }
+  .circle1 { width: 150px; height: 150px; }
+  .circle2 { width: 200px; height: 200px; }    .circle3 { width: 250px; height: 250px; }
+}
