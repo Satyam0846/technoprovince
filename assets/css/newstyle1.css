@@ -836,6 +836,9 @@ img {
     .faq-answer {
         font-size: 0.9rem;
     }
+    .industries_we_serve{
+      font-size: 20px;
+    }
 }
 
 @media (max-width: 576px) {
