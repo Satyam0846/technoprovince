@@ -4,7 +4,10 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html
 RewriteCond %{HTTP_HOST} ^technoprovince.com [NC]
 RewriteRule ^(.*)$ https://www.technoprovince.com/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^www\.technoprovince\.com$ [NC]
+RewriteRule ^data-scraping-services$ https://technoprovince.com/data-scraping-services-outsourcing.html [R=301,L]
 <Files "config.php">
     Order Allow,Deny
     Deny from all
 </Files>
+
