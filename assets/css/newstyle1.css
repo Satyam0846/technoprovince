@@ -913,7 +913,7 @@ img {
   .container-cleansing {
     width: 90%;
     max-width: 1200px;
-    margin: -74px auto;
+    margin: 0px auto;
     padding: 0 15px;
   }
   
