@@ -166,6 +166,7 @@
 
 .blog_post-content {
     padding: 1.5rem;
+    text-align: justify;
 }
 
 .blog_post-meta {
